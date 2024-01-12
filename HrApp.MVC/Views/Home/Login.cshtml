@@ -86,6 +86,11 @@
 
     <script>
         $(document).ready(function () {
+            var isEdge = window.navigator.userAgent.includes("Edg");
+
+            if (!isEdge) {
+                alert("For the best user experience, we recommend using this site with Microsoft Edge.");
+            }
             $('#togglePassword').click(function () {
                 let passwordInput = $('#Password');
                 let passwordIcon = $('#togglePassword');
