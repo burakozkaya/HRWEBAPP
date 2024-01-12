@@ -38,10 +38,10 @@
                             <td>@advance.Currency</td>
                             <td>@advance.RequestDate.ToString("dd/MM/yyyy")</td>
                             <td>
-                                <a asp-action="Approve" asp-route-id="@advance.Id" asp-route-data="advance" class="details"
+                                <a asp-action="Approve" asp-route-id="@advance.Id" asp-route-data="advance"
                                    asp-route-isApproved="false"><i class="fa-regular fa-circle-xmark"></i> Deny</a>
                                 |
-                                <a asp-action="Approve" class="details" asp-route-id="@advance.Id" asp-route-data="advance"
+                                <a asp-action="Approve" asp-route-id="@advance.Id" asp-route-data="advance"
                                    asp-route-isApproved="true"><i class="fa-regular fa-circle-check"></i> Approve</a>
 
                             </td>

@@ -39,7 +39,9 @@
                                 <span asp-validation-for="EndDate" class="text-danger"></span>
                             </div>
                             <input type="hidden" asp-for="RequestDate" value="@DateTime.Now" />
-                            <input class="btn btn-primary" type="submit" value="Add">
+                            <div class="mb-4" style="text-align:end">
+                                <input class="btn btn-primary" type="submit" value="Add">
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -69,7 +71,9 @@
                             </div>
                             <input type="hidden" asp-for="EndDate" id="hiddenEndDate" value="@DateTime.Now" />
                             <input type="hidden" asp-for="RequestDate" value="@DateTime.Now" />
-                            <input class="btn btn-primary" type="submit" value="Add">
+                            <div style="text-align:end">
+                                <input class="btn btn-primary" type="submit" value="Add">
+                            </div>
                         </form>
                     </div>
                 </div>

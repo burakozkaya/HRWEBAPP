@@ -39,10 +39,10 @@
                             <td>@leave.EndDate.ToString("dd/MM/yyyy")</td>
                             <td>@leave.RequestDate.ToString("dd/MM/yyyy")</td>
                             <td>
-                                <a asp-action="Approve" asp-route-id="@leave.Id" class="details" asp-route-data="leave"
+                                <a asp-action="Approve" asp-route-id="@leave.Id" asp-route-data="leave"
                                     asp-route-isApproved="false"><i class="fa-regular fa-circle-xmark"></i> Deny</a>
                                 |
-                                <a asp-action="Approve" class="details" asp-route-id="@leave.Id" asp-route-data="leave"
+                                <a asp-action="Approve" asp-route-id="@leave.Id" asp-route-data="leave"
                                     asp-route-isApproved="true"><i class="fa-regular fa-circle-check"></i> Approve</a>
 
 

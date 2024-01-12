@@ -17,7 +17,7 @@
                 </div>
                 <form asp-action="Add" method="post" enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    <div class="p-5">
+                    <div class="card-body">
                         <div id="companyTypesContainer"></div>
                         <div>
                             <label for="type">Company Type:</label>
@@ -80,8 +80,8 @@
                             <input id="contractEndDate" type="date" asp-for="ContractEndDate" class="form-control" />
                             <span asp-validation-for="ContractEndDate" class="text-danger"></span>
                         </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                        <div style="text-align:end">
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
                         </div>
                     </div>
                 </form>

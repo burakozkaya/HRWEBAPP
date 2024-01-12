@@ -2,7 +2,7 @@
 
 @model UpdateCompanyViewModel
 
-<div class="container mt-5">
+<div class="container mt-1">
     <div class="row">
         <div class="col-md-12 text-left">
             <div class="card card-primary">
@@ -13,7 +13,7 @@
                     <input type="hidden" asp-for="Id" value="@Model.Id" />
 
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    <div class="p-5">
+                    <div class="p-3">
                         <div id="companyTypesContainer"></div>
                         <div>
                             <label for="type">Company Type:</label>
@@ -72,8 +72,8 @@
                             <input id="contractEndDate" type="date" asp-for="ContractEndDate" class="form-control" />
                             <span asp-validation-for="ContractEndDate" class="text-danger"></span>
                         </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary mt-4">Update</button>
+                        <div style="text-align:center">
+                            <button type="submit" class="btn btn-primary mt-2" style="width:40%">Update</button>
                         </div>
                     </div>
                 </form>
